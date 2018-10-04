@@ -57,9 +57,17 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/about', (req, res)=>{
-    res.render('about.hbs', 
+    res.render('projects.hbs', 
     {
         title: 'About Page'
+        
+    });
+});
+
+app.get('/projects', (req, res)=>{
+    res.render('projects.hbs', 
+    {
+        title: 'Projects'
         
     });
 });
